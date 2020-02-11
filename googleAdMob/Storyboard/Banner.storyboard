@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QuF-8X-ZpD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Banner View Controller-->
+        <scene sceneID="wQT-eU-IBW">
+            <objects>
+                <viewController id="QuF-8X-ZpD" customClass="BannerViewController" customModule="googleAdMob" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iEH-ra-eZv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bJ-gC-2Px">
+                                <rect key="frame" x="160" y="70" width="55" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xM2-sn-Ywa">
+                                <rect key="frame" x="27.5" y="101" width="320" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="FBk-u8-7Gg"/>
+                                    <constraint firstAttribute="height" constant="100" id="SPC-Ue-1I2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNd-eH-BHT">
+                                <rect key="frame" x="27.5" y="231" width="320" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Fuf-Qj-DFt"/>
+                                    <constraint firstAttribute="height" constant="300" id="sd3-i2-y86"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drS-D3-Lkh">
+                                <rect key="frame" x="27.5" y="561" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RNF-49-kLw"/>
+                                    <constraint firstAttribute="width" constant="320" id="cPR-dR-RTB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3bJ-gC-2Px" firstAttribute="top" secondItem="4ZC-kN-gpr" secondAttribute="top" constant="50" id="AF4-C0-LhS"/>
+                            <constraint firstItem="xM2-sn-Ywa" firstAttribute="top" secondItem="3bJ-gC-2Px" secondAttribute="bottom" constant="10" id="DHT-y1-lrM"/>
+                            <constraint firstItem="3bJ-gC-2Px" firstAttribute="centerX" secondItem="iEH-ra-eZv" secondAttribute="centerX" id="RAE-Jd-TOM"/>
+                            <constraint firstItem="drS-D3-Lkh" firstAttribute="centerX" secondItem="iEH-ra-eZv" secondAttribute="centerX" id="Rgu-E1-xjK"/>
+                            <constraint firstItem="gNd-eH-BHT" firstAttribute="top" secondItem="xM2-sn-Ywa" secondAttribute="bottom" constant="30" id="dhh-hj-a3c"/>
+                            <constraint firstItem="drS-D3-Lkh" firstAttribute="top" secondItem="gNd-eH-BHT" secondAttribute="bottom" constant="30" id="eWJ-k2-xY2"/>
+                            <constraint firstItem="gNd-eH-BHT" firstAttribute="centerX" secondItem="iEH-ra-eZv" secondAttribute="centerX" id="hCk-8N-qLY"/>
+                            <constraint firstItem="xM2-sn-Ywa" firstAttribute="centerX" secondItem="iEH-ra-eZv" secondAttribute="centerX" id="iPX-c0-Dl3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4ZC-kN-gpr"/>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView1" destination="xM2-sn-Ywa" id="b61-Rf-Xrv"/>
+                        <outlet property="bannerView2" destination="gNd-eH-BHT" id="bFh-Ze-Yza"/>
+                        <outlet property="bannerView3" destination="drS-D3-Lkh" id="blf-7o-I2b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bel-uv-Emc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-490" y="37"/>
+        </scene>
+    </scenes>
+</document>
