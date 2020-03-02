@@ -1,5 +1,9 @@
 # GoogleAdMob
 
+Function
+1. GoogleAdMob 예제
+2. 배너광고, 전면광고, 네이티브 광고 활용 예제
+
 1. Banner Ad
 ![Simulator Screen Shot - iPhone XR - 2020-02-11 at 11 50 20](https://user-images.githubusercontent.com/25197752/74208085-72696700-4cc5-11ea-8cf6-b95c14bf0fdb.png)
 
